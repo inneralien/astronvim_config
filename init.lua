@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "solarized8",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -27,6 +27,11 @@ return {
   },
 
   lsp = {
+    setup_handlers = {
+      -- add custom handler
+      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end
+      },
+  },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
@@ -52,8 +57,15 @@ return {
     servers = {
       -- "pyright"
     },
+  plugins = {
+    "simrat39/rust-tools.nvim", -- add lsp plugin
+    {
+      "williamboman/mason-lspconfig.nvim",
+      opts = {
+        ensure_installed = { "rust_analyzer" },
+      },
+    },
   },
-
   -- Configure require("lazy").setup() options
   lazy = {
     defaults = { lazy = true },
