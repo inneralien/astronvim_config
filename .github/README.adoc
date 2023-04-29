@@ -6,7 +6,7 @@ InnerAlien
 
 A user configuration template for https://github.com/AstroNvim/AstroNvim[AstroNvim]
 
-* [x] ',' as leader key (see `options.lua`)
+* [x] `,` as leader key (see `options.lua`)
 * [x] Rust analyzer via rust-tools for inlay hints!
 * [x] Solarized colorscheme
 * [x] https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/VictorMono[VictorMono Nerd Font]
