@@ -41,7 +41,7 @@ git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 === Create a new user repository from this template
 TIP: If you just want to try out my template you don't have to do this step at
-the moment, so slip to the clone the repository step.
+the moment, so skip to the clone the repository step.
 
 Press the "Use this template" button above to create a new repository to store
 your user configuration.
