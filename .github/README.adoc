@@ -1,0 +1,69 @@
+= AstroNvim User Configuration Example
+:icons: font
+:source-highlighter: pygments
+InnerAlien
+2023/04/29
+
+A user configuration template for https://github.com/AstroNvim/AstroNvim[AstroNvim]
+
+* [x] ',' as leader key (see `options.lua`)
+* [x] Rust analyzer via rust-tools for inlay hints!
+* [x] Solarized colorscheme
+* [x] https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/VictorMono[VictorMono Nerd Font]
+      (see `options.lua`)
+* [x] Disable auto format as it changes some of AstroNvim's lua files when
+      editing them. Diffs look ugly.
+* [x] CoPilot! (see `plugins/community.lua`)
+* [x] Remove indent-blankline because I just really don't like the look of it.
+      (see `plugins/disabled.lua`)
+* [ ] Add filepath and filename to heirline.lua. Not quite like I want it yet.
+* [ ] Add in custom snippets
+
+== 🛠️ Installation
+
+=== Make a backup of your current nvim and shared folder
+
+[source:shell]
+----
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+----
+
+=== Clone AstroNvim
+
+TIP: You only need to do this if you don't already have AstroNvim installed
+[source:shell]
+----
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+----
+
+=== Create a new user repository from this template
+TIP: If you just want to try out my template you don't have to do this step at
+the moment, so slip to the clone the repository step.
+
+Press the "Use this template" button above to create a new repository to store
+your user configuration.
+
+You can also just clone this repository directly if you do not want to track
+your user configuration in GitHub.
+
+=== Clone the repository
+
+To clone my repository and test it out
+[source:shell]
+----
+git clone https://github.com/inneralien/astronvim_config ~/.config/nvim/user
+----
+
+To clone your own repository you just need to change your URL
+[source:shell]
+----
+git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+----
+
+=== Start Neovim
+
+[source:shell]
+----
+nvim
+----
