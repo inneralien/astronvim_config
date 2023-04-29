@@ -19,6 +19,8 @@ A user configuration template for https://github.com/AstroNvim/AstroNvim[AstroNv
 * [ ] Add filepath and filename to heirline.lua. Not quite like I want it yet.
 * [ ] Add in custom snippets
 
+image::./screenshot.png[]
+
 == 🛠️ Installation
 
 === Make a backup of your current nvim and shared folder
